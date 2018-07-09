@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>REST</title>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+    <script src="lib/lodash.compat.min.js"></script>
+    <script src="lib/restangular.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body style="text-align:center;">
+<a href="home.html">Home</a>
+<div ng-app="myApp" ng-controller="personCtrl">
+<form action="/pay" method="post">
+    <input style="float:right;font-size:50px;background-color:#7842ba;border-color:black;color:white;width:200px;height:200px;margin-top:10px" type="submit" value="Buy">
+  </form>
+	</br></br><div>
+				<label>Add Information </label></br>
+								
+				<input placeholder="User_ID" type="text" name="by" ng-model="userID"></br>
+				<input placeholder="User_Username" type="text" name="by" ng-model="UserName">
+			
+			
+	</div></br>
+	<img src="http://localhost:3000/images/binoculars.png" alt="Smiley face">
+<button class="btn btn-primary" ng-click="register();" >Register</button>
+<button class="btn btn-primary" ng-click="login();" >Login</button>
+<button class="btn btn-primary" ng-click="getAllUsersList();" >Get List</button>
+<button class="btn btn-primary" ng-click="updateuser(this.userID);" >update </button>
+
+
+</div>
+
+</body>
+</html>

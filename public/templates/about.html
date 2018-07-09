@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REST</title>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+    <script src="lib/lodash.compat.min.js"></script>
+    <script src="lib/restangular.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body  style="text-align:center;">
+
+<div ng-app="ds" ng-controller="personCtrl">
+
+<a href="home.html">Home</a> | <a href="about.html">About</a> | <a href="edu.html">Education</a>
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+
+	
+<button class="btn btn-primary" style="float:right;background-color:#7842ba;border-color:black;margin-bottom:10px;color:white"  ng-click="fullName();" >Add New Batch</button>
+
+
+</div>
+
+</body>
+</html>
